@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="h.virgos.gonzalo.tema4ej1sharedpreferences.MainActivity">
+
+    <TextView
+        android:text="Adivina un numero entre 1 y 10."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tv1"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/tv1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/et1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Introduce un numero"
+        android:inputType="number" />
+
+    <Button
+        android:text="Verificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt1"
+        android:layout_below="@+id/et1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:onClick="verificar" />
+
+    <TextView
+        android:text="El mejor recor hasta ahora es: 10 intentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:id="@+id/tv3"
+        android:layout_below="@+id/bt2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="El numero correcto era= 9  intentos: 10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Volver a jugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt2"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:onClick="volver"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Ultima vez : 10 intentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/tv4" />
+
+</RelativeLayout>
